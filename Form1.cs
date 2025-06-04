@@ -81,5 +81,10 @@ namespace WindowsFormsApp1
         {
             this.Text = "RFK_solution";
         }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
