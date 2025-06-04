@@ -19,15 +19,23 @@ namespace WindowsFormsApp1
 
         private void BtnShowpart1_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Form1();
-            Form1.Show();
+            Form _e = new Form1();
+            _e.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Form1();
-            Form1.ShowDialog();
-                
+            using (Form frm = new Form1())
+            {
+                frm.ShowDialog();
+            }
+
+        }
+
+        private void BtnMsgBoxForm_Click(object sender, EventArgs e)
+        {
+            Form frm_1 = new FrmMessageBox();
+            frm_1.ShowDialog();
         }
     }
 }
