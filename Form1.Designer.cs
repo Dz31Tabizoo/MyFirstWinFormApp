@@ -39,6 +39,8 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.Close = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,6 +172,28 @@
             this.Close.UseVisualStyleBackColor = false;
             this.Close.Click += new System.EventHandler(this.Close_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(105, 449);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LightGreen;
+            this.button5.Location = new System.Drawing.Point(83, 397);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(132, 27);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "Checkbox button";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +201,8 @@
             this.BackColor = System.Drawing.Color.SpringGreen;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.baby_footprints_background;
             this.ClientSize = new System.Drawing.Size(1016, 820);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.Close);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioButton1);
@@ -209,6 +235,8 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button5;
     }
 }
 

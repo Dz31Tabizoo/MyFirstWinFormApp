@@ -16,9 +16,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-       
-
         private void button_Click(object sender, EventArgs e)
         {
             textBox2.Text = textBox1.Text;
@@ -61,8 +58,6 @@ namespace WindowsFormsApp1
                 textBox1.Visible = false;
 
             }
-
-
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -86,5 +81,16 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(checkBox1.Checked.ToString(),"CheckBox Value");
+        }
+
+        
+
+
+
+
     }
 }
