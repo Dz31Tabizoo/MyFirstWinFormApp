@@ -87,10 +87,9 @@ namespace WindowsFormsApp1
             MessageBox.Show(checkBox1.Checked.ToString(),"CheckBox Value");
         }
 
-        
-
-
-
-
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            button5.Enabled = checkBox1.Checked;
+        }
     }
 }
